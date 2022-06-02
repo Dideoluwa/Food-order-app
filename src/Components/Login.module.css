@@ -1,0 +1,77 @@
+.cover {
+    background-color: rgba(255, 255, 255, 0.92);
+    width: 90%;
+    max-width: 40rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+}
+.back{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.h1{
+    text-align: center;
+}
+
+.control {
+    margin: 1rem 0;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+.control label,
+.control input {
+    display: block;
+}
+
+.control input {
+    flex: 3;
+    font: inherit;
+    padding: 0.35rem 0.35rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.control input:focus {
+    outline: none;
+    border-color: black;
+    background: #595959;
+}
+.control.invalid input {
+    border-color: red;
+    /* background: #fbdada; */
+  }
+.button{
+    padding: 18px;
+    border-radius: 15px;
+    cursor: pointer;
+    background:  rgb(215, 81, 81);
+    width: 20%;
+    border-color: transparent;
+}
+button:disabled{
+    background: #ccc;
+    border-color: transparent;
+    color: #666666;
+    cursor: not-allowed;
+}
+@media only screen and (max-width: 414px){
+    .control label,
+    .control input {
+       font-size: 12px;
+    }
+    .h1{
+        text-align: center;
+        font-size: 15px;
+    }
+    .button{
+        width: 50%;
+        border-color: transparent;
+    }
+}

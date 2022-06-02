@@ -1,0 +1,110 @@
+.overlay{
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover {
+    max-width: 60rem;
+    width: 70%;
+    margin: 2rem auto;
+    animation: slide-down 300ms ease-out forwards;
+}
+
+.cart-items {
+    /* list-style-type: none; */
+    margin: 0;
+    padding: 0;
+    max-height: 20rem;
+    overflow: auto;
+}
+.init{
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    display: flex;
+    justify-content: flex-end;
+}
+.button button{
+    margin-left: 18px;
+    cursor: pointer;
+    padding: 8px 25px;
+    background-color: rgb(255, 86, 86);
+    border-radius: 25px;
+    border-color: transparent;
+}
+.button button:hover{
+    background-color: white;
+    color: rgb(255, 86, 86);
+    transition: 0.2s;
+}
+.cartList{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(255, 86, 86);
+}
+.quantity{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    max-width: 50%;
+    margin-bottom: 21px;
+}
+.amount{
+    margin-left: 35px;
+    border: 1px solid rgb(115, 115, 115);
+    padding: 2px 8px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.button2 button{
+    padding: 2px 18px;
+    background-color: white;
+    color: rgb(255, 86, 86);
+    margin-left: 12px;
+    border-color: transparent;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.button2 button:hover{
+    color: white;
+    background-color: rgb(255, 86, 86);
+}
+  
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+@media only screen and (max-width: 414px){
+    .button{
+        justify-content: space-between;
+    }
+    .h2{
+        font-size: 14px;
+    }
+    .amount{
+        padding: 2px 4px;
+        margin-left: 12px;
+    }
+}
+@media only screen and (max-width: 280px){
+    .cover {
+        max-width: 90rem;
+        width: 100%;
+        margin: 2rem auto;
+        z-index: 10000;
+    }
+}

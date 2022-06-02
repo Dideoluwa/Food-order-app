@@ -1,0 +1,12 @@
+.card{
+    background: rgb(217, 217, 217);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+    padding: 21px;
+}
+
+@media only screen and (max-width: 414px){
+    .card{
+        padding: 12px;
+    }
+}

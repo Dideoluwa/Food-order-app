@@ -1,0 +1,29 @@
+.cover{
+  background-color: rgba(222, 17, 17 , 0.92);
+  /* position: fixed; */
+  position: sticky;
+  /* position: static; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   height: 5rem;
+   z-index: 100;
+   padding: 0 10%;
+}
+.h3{
+    color: white;
+    font-size: 25px;
+}
+@media only screen and (max-width: 414px){
+    .cover{
+         height: 4rem;
+         padding: 0;
+      }
+    .h3{
+        color: white;
+        font-size: 18px;
+    }
+}

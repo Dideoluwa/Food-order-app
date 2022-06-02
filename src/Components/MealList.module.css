@@ -1,0 +1,112 @@
+.meals {
+    /* display: flex; */
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(123, 123, 123);
+}
+
+.list{
+    margin-top: 60px;
+    /* text-align: right; */
+    display: flex;
+}
+.list label {
+    font-weight: bold;
+    margin-right: 13px;
+}
+
+.list input:focus {
+    border-color: black;
+}
+
+.list input {
+    border-radius: 15px;
+    border-color: black;
+}
+
+.list button{
+    padding: 5px 15px;
+    border-radius: 15px;
+    border-color: transparent;
+    cursor: pointer;
+    background-color: rgb(209, 22, 24);
+    margin-left: 12px;
+}
+
+.list1 {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+
+.description {
+    font-family: initial;
+}
+
+.price {
+    margin-bottom: 18px;
+    color: red;
+    font-weight: bold;
+}
+
+.wrapper {
+    width: 70%;
+    display: flex;
+    flex: 1;
+    padding: 12px;
+    /* max-width: 50%; */
+}
+
+.wrapper img {
+    width: 60%;
+}
+
+@keyframes meals-appear {
+    from {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .meals {
+        max-width: 70rem;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .meals li {
+        flex-direction: column;
+    }
+
+    .wrapper {
+        width: 100%;
+        display: flex;
+        flex: 1;
+        padding: 12px;
+        /* max-width: 50%; */
+    }
+
+    .wrapper img {
+        width: 100%;
+    }
+    .list{
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .list button{
+        padding: 5px 10px;
+        border-radius: 15px;
+        border-color: transparent;
+        cursor: pointer;
+        background-color: rgb(209, 22, 24);
+        margin-left: 12px;
+    }
+}
