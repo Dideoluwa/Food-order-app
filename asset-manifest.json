@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Foodify-order/static/css/main.89860196.css",
+    "main.js": "/Foodify-order/static/js/main.e47c9c93.js",
+    "static/media/image1.jpg": "/Foodify-order/static/media/image1.d58c8cb6d1fbd1464871.jpg",
+    "static/media/meals.jpeg": "/Foodify-order/static/media/meals.84186cf51935756fce1f.jpeg",
+    "index.html": "/Foodify-order/index.html",
+    "main.89860196.css.map": "/Foodify-order/static/css/main.89860196.css.map",
+    "main.e47c9c93.js.map": "/Foodify-order/static/js/main.e47c9c93.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89860196.css",
+    "static/js/main.e47c9c93.js"
+  ]
+}
